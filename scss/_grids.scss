@@ -1,0 +1,334 @@
+.gridprod{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: auto auto auto;
+    header{grid-area:header; display: flex; justify-content: space-between;}
+    main{grid-area: main;}
+    footer{grid-area: footer; display:flex; justify-content: space-between;}
+
+}
+
+
+
+
+
+.gridindex{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: auto auto auto;
+    header{grid-area:header; display: flex; justify-content: space-between;}
+    main{grid-area: main;}
+footer{grid-area: footer; display:flex; justify-content: space-between;}
+
+
+}
+
+.gridmain{
+    display: grid;
+    grid-template-areas: 
+    "imgencabezado imgencabezado imgencabezado"
+    "imgprod imgprod imgprod2"
+    "titulo titulo titulo2"
+    "caract caract caract2"
+    "comprar comprar comprar2"
+    ;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: repeat(6, auto);
+    .imgEncabezado{grid-area: imgencabezado;}
+.imgprod{ grid-area: imgprod; display: flex; justify-content: space-evenly;}
+.img3{grid-area: imgprod2;}
+
+.titulo{grid-area: titulo; display: flex; justify-content: space-around;}
+.titulo2{grid-area: titulo2;}
+.desc{grid-area: caract; display: flex; justify-content: space-around;}
+.desc3{grid-area: caract2;}
+
+.comprar{grid-area: comprar; display: flex; justify-content: space-around; background: linear-gradient(180deg, #65bce8 0%, #306485 49%, #fbde74 50%, #ff9900 100%);
+    background-size: 1px 100px;
+    transition: all .3s;}
+.comprar3{grid-area: comprar2; margin-left: 131px; margin-right: 150px; background: linear-gradient(180deg, #65bce8 0%, #306485 49%, #fbde74 50%, #ff9900 100%);
+    background-size: 1px 100px;
+    transition: all .3s; }
+
+.promo{grid-area: promo; display: flex; justify-content: space-around;}
+.promo2{grid-area: promo2;}
+
+}
+.comprar_b{
+    background: linear-gradient(180deg, #65bce8 0%, #306485 49%, #fbde74 50%, #ff9900 100%);
+    background-size: 1px 100px;
+    transition: all .3s;
+    
+}
+.oferta{
+
+    background: linear-gradient(to left, red, yellow);
+    transform: translate(-712px, 895px) rotate(40deg);
+    /* border: 20px; */
+    /* margin: 218px; */
+    margin-bottom: 654px;
+    margin-left: 430px;
+
+
+}
+
+.gridnosotros{
+    display: grid;
+    grid-template-areas: 
+    "titulo1 titulo1"
+    "img1 text1"
+    "titulo2 titulo2"
+    "text2 img2"
+    "titulo3 titulo3"
+    "img3 text3"
+    ;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(3, auto);
+
+    .titulonos{grid-area: titulo1; display: flex; justify-content: center;}
+.imgnos{grid-area: img1;}
+.text1{grid-area: text1;}
+.titunosotros{grid-area: titulo2; display: flex; justify-content: center;}
+.text2{grid-area: text2;}
+.imgnosotros{grid-area: img2;}
+.comotrab{grid-area: titulo3; display: flex; justify-content: center;}
+.imgtrab{grid-area: img3;}
+.text3{grid-area: text3;}
+}
+
+.gridcont{
+    display: grid;
+    grid-template-areas: 
+    "titulo titulo"
+    "formulario formulario";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+    .titulocontac{grid-area: titulo; display: flex; justify-content: center;}
+    .form{grid-area: formulario; display: flex; justify-content: center;}
+
+
+
+}
+.bloggrid{
+    display: grid;
+    grid-template-areas: 
+    "titulo titulo titulo"
+    "pregunta1 pregunta2 pregunta3"
+    "titulo2 titulo2 titulo2"
+    "video1 video2 video3"
+    "titulotest titulotest titulotest"
+    "textotex1 textotex2 textotex3";
+    grid-template-columns: 30% 40% 40%;
+    grid-template-rows: repeat(6,auto);
+    .tituloBlog{grid-area: titulo; display: flex; justify-content: center;}
+    .pregunta1{grid-area: pregunta1;}
+    .pregunta2{grid-area: pregunta2;}
+    .pregunta3{grid-area: pregunta3;}
+    .titulotut{grid-area: titulo2; display: flex; justify-content: center;}
+    .video1{grid-area: video1; display: flex; justify-content: space-around;}
+    .video2{grid-area: video2;  display: flex; justify-content: space-around;}
+    .video3{grid-area: video3;  display: flex; justify-content: space-around;}
+    .titulotest{grid-area: titulotest; display: flex; justify-content: center;}
+    .textotex1{grid-area: textotex1;}
+    .textotex2{grid-area: textotex2;}
+    .textotex3{grid-area: textotex3;}
+    
+    
+}
+@media screen and (max-width:768px){
+    
+
+    header, .headernos{
+        display: grid;
+        grid-template-areas: 
+        "logo"
+        "nav";
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        .logo{grid-area: logo;}
+        nav{grid-area: nav;}
+    }
+
+    .imgmobile{
+        width: 400px; height: 100%;
+    }
+
+
+    .gridindex{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer"
+        ;
+        grid-template-columns: 100%;
+        grid-template-columns: repeat(3, auto);
+        
+    header{grid-area: header; justify-content: center;}
+    main{grid-area: main;}
+    footer{grid-area: footer; display: flex; flex-direction: column;}
+    
+    }
+    .header{flex-wrap: wrap; display: flex; justify-content: center;}
+    .headernos{flex-wrap: wrap; display: flex; justify-content: center;}
+    .nav{ display: flex; justify-content: center;}
+    
+    
+
+    .mainindex{
+        display: grid;
+        grid-template-areas: 
+        "img"
+        "titulo"
+        "texto"
+        "titulo2"
+        "tabla";
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(5, auto);
+
+        .imgindex{grid-area: img;}
+    .titulo1{grid-area: titulo;}
+    .texto{grid-area: texto;}
+    .titulo2{grid-area: titulo2;}
+    .tabla{grid-area: tabla;}
+    }
+    
+    .tabla{
+        display: flex;
+        flex-direction: column;
+       }
+
+       .news{ display: flex;
+    justify-content: center;}
+
+
+    .gridmain{
+        display: grid;
+        grid-template-areas: 
+        "img img"
+        "producto1 producto1"
+        "titulo titulo"
+        "desc desc"
+        "comprar comprar"
+        "producto2 producto2"
+        "titulo2 titulo2"
+        "desc2 desc2"
+        "comprar2 comprar2"
+        ;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto;
+
+        .imgmobile{grid-area: img;}
+        .imgprod{grid-area: producto1;}
+        .titulo{grid-area: titulo; display: flex; justify-content: space-around;}
+        .desc{grid-area: desc; display: flex; justify-content: space-around;}
+        .comprar{grid-area: comprar; display: flex; justify-content: space-around;}
+        .img3{grid-area: producto2; display: flex; justify-content: space-around;}
+        .titulo2{grid-area: titulo2; display: flex; justify-content: space-around;}
+        .desc3{grid-area: desc2;}
+        .comprar3{grid-area: comprar2; display: flex; justify-content: space-around; margin-left: 124px;}
+        
+
+    }
+    .oferta{
+        display: none;
+
+    }
+    .mpc3503{
+        width: 150px;
+        height: 150px;
+    }
+    .mp3554{
+        width: 150px;
+        height: 150px;
+    }
+   .mp301{
+    width: 150px;
+        height: 150px;
+   }
+
+
+   .gridnosotros{
+    display: grid;
+    grid-template-areas: 
+    "titulo1"
+    "img1"
+    "text1"
+    "titulo2"
+    "text2"
+    "img2"
+    "titulo3"
+    "img3" 
+    "text3"
+    ;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(6, auto);
+
+    .titulonos{grid-area: titulo1; display: flex; justify-content: center;}
+.imgnos{grid-area: img1;}
+.text1{grid-area: text1;}
+.titunosotros{grid-area: titulo2; display: flex; justify-content: center;}
+.text2{grid-area: text2;}
+.imgnosotros{grid-area: img2;}
+.comotrab{grid-area: titulo3; display: flex; justify-content: center;}
+.imgtrab{grid-area: img3;}
+.text3{grid-area: text3;}
+}
+
+.gridcont{
+    display: grid;
+    grid-template-areas: 
+    "titulo"
+    "formulario";
+
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    .titulocontac{display: flex; justify-content: center;}
+ .center{display: flex; justify-content: center;}
+.form2{display: flex; flex-direction: column;}   
+
+}
+
+.bloggrid{
+    display: grid;
+    grid-template-areas: 
+    
+    "titulo"
+    "pregunta1"
+    "pregunta2"
+    "pregunta3"
+    "tutoriales"
+    "video1"
+    "video2"
+    "video3"
+    "titulotest"
+    "testimonio1"
+    "testimonio2"
+    "testimonio3";
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(12, auto);   
+    
+    .tituloBlog{grid-area: titulo; display: flex; justify-content: center;}
+.pregunta1{grid-area: pregunta1;}
+.pregunta2{grid-area: pregunta2;}
+.pregunta3{grid-area: pregunta3;}
+.titulotut{grid-area: tutoriales; display: flex; justify-content: center;}
+.video1{grid-area: video1; display: flex; justify-content: space-around;}
+.video2{grid-area: video2;  display: flex; justify-content: space-around;}
+.video3{grid-area: video3;  display: flex; justify-content: space-around;}
+.titulotest{grid-area: titulotest; display: flex; justify-content: center;}
+.textotex1{grid-area: testimonio1;}
+.textotex2{grid-area: testimonio2;}
+.textotex3{grid-area: testimonio3;}
+
+
+}
+}

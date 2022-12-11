@@ -1,419 +1,389 @@
-.color{
-    font-family: cursive;  
+.gridprod {
+  display: grid;
+  grid-template-areas: "header header header" "main main main" "footer footer footer";
+  grid-template-columns: 30% 40% 30%;
+  grid-template-rows: auto auto auto; }
+  .gridprod header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between; }
+  .gridprod main {
+    grid-area: main; }
+  .gridprod footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between; }
 
-}
-h1{
-    color: darkblue;
-}
-.li_nav{
-    list-style: none;
-}
+.gridindex {
+  display: grid;
+  grid-template-areas: "header header header" "main main main" "footer footer footer";
+  grid-template-columns: 30% 40% 30%;
+  grid-template-rows: auto auto auto; }
+  .gridindex header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between; }
+  .gridindex main {
+    grid-area: main; }
+  .gridindex footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between; }
 
-.li_nav:hover{
-    background-color: red;
-}
-
-.comprar3, .comprar_b{
+.gridmain {
+  display: grid;
+  grid-template-areas: "imgencabezado imgencabezado imgencabezado" "imgprod imgprod imgprod2" "titulo titulo titulo2" "caract caract caract2" "comprar comprar comprar2";
+  grid-template-columns: 30% 40% 30%;
+  grid-template-rows: repeat(6, auto); }
+  .gridmain .imgEncabezado {
+    grid-area: imgencabezado; }
+  .gridmain .imgprod {
+    grid-area: imgprod;
+    display: flex;
+    justify-content: space-evenly; }
+  .gridmain .img3 {
+    grid-area: imgprod2; }
+  .gridmain .titulo {
+    grid-area: titulo;
+    display: flex;
+    justify-content: space-around; }
+  .gridmain .titulo2 {
+    grid-area: titulo2; }
+  .gridmain .desc {
+    grid-area: caract;
+    display: flex;
+    justify-content: space-around; }
+  .gridmain .desc3 {
+    grid-area: caract2; }
+  .gridmain .comprar {
+    grid-area: comprar;
+    display: flex;
+    justify-content: space-around;
     background: linear-gradient(180deg, #65bce8 0%, #306485 49%, #fbde74 50%, #ff9900 100%);
     background-size: 1px 100px;
-    transition: all .3s;
-}
+    transition: all .3s; }
+  .gridmain .comprar3 {
+    grid-area: comprar2;
+    margin-left: 131px;
+    margin-right: 150px;
+    background: linear-gradient(180deg, #65bce8 0%, #306485 49%, #fbde74 50%, #ff9900 100%);
+    background-size: 1px 100px;
+    transition: all .3s; }
+  .gridmain .promo {
+    grid-area: promo;
+    display: flex;
+    justify-content: space-around; }
+  .gridmain .promo2 {
+    grid-area: promo2; }
 
-.comprar3:hover{
-    background-position: 0 -50px;
-    transition: all .3s;
-}
+.comprar_b {
+  background: linear-gradient(180deg, #65bce8 0%, #306485 49%, #fbde74 50%, #ff9900 100%);
+  background-size: 1px 100px;
+  transition: all .3s; }
 
+.oferta {
+  background: linear-gradient(to left, red, yellow);
+  transform: translate(-712px, 895px) rotate(40deg);
+  /* border: 20px; */
+  /* margin: 218px; */
+  margin-bottom: 654px;
+  margin-left: 430px; }
 
+.gridnosotros {
+  display: grid;
+  grid-template-areas: "titulo1 titulo1" "img1 text1" "titulo2 titulo2" "text2 img2" "titulo3 titulo3" "img3 text3";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(3, auto); }
+  .gridnosotros .titulonos {
+    grid-area: titulo1;
+    display: flex;
+    justify-content: center; }
+  .gridnosotros .imgnos {
+    grid-area: img1; }
+  .gridnosotros .text1 {
+    grid-area: text1; }
+  .gridnosotros .titunosotros {
+    grid-area: titulo2;
+    display: flex;
+    justify-content: center; }
+  .gridnosotros .text2 {
+    grid-area: text2; }
+  .gridnosotros .imgnosotros {
+    grid-area: img2; }
+  .gridnosotros .comotrab {
+    grid-area: titulo3;
+    display: flex;
+    justify-content: center; }
+  .gridnosotros .imgtrab {
+    grid-area: img3; }
+  .gridnosotros .text3 {
+    grid-area: text3; }
 
+.gridcont {
+  display: grid;
+  grid-template-areas: "titulo titulo" "formulario formulario";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto; }
+  .gridcont .titulocontac {
+    grid-area: titulo;
+    display: flex;
+    justify-content: center; }
+  .gridcont .form {
+    grid-area: formulario;
+    display: flex;
+    justify-content: center; }
 
+.bloggrid {
+  display: grid;
+  grid-template-areas: "titulo titulo titulo" "pregunta1 pregunta2 pregunta3" "titulo2 titulo2 titulo2" "video1 video2 video3" "titulotest titulotest titulotest" "textotex1 textotex2 textotex3";
+  grid-template-columns: 30% 40% 40%;
+  grid-template-rows: repeat(6, auto); }
+  .bloggrid .tituloBlog {
+    grid-area: titulo;
+    display: flex;
+    justify-content: center; }
+  .bloggrid .pregunta1 {
+    grid-area: pregunta1; }
+  .bloggrid .pregunta2 {
+    grid-area: pregunta2; }
+  .bloggrid .pregunta3 {
+    grid-area: pregunta3; }
+  .bloggrid .titulotut {
+    grid-area: titulo2;
+    display: flex;
+    justify-content: center; }
+  .bloggrid .video1 {
+    grid-area: video1;
+    display: flex;
+    justify-content: space-around; }
+  .bloggrid .video2 {
+    grid-area: video2;
+    display: flex;
+    justify-content: space-around; }
+  .bloggrid .video3 {
+    grid-area: video3;
+    display: flex;
+    justify-content: space-around; }
+  .bloggrid .titulotest {
+    grid-area: titulotest;
+    display: flex;
+    justify-content: center; }
+  .bloggrid .textotex1 {
+    grid-area: textotex1; }
+  .bloggrid .textotex2 {
+    grid-area: textotex2; }
+  .bloggrid .textotex3 {
+    grid-area: textotex3; }
 
-.comprar_b:hover{
-    background-position: 0 -50px;
-    transition: all .3s;
-}
-
-
-
-.li_nav{
-   width: 5rem;
-   display: inline-block;
-   padding: 15px;
-}
-
-.nav{
-    background-color: yellowgreen;
-    padding-top: 25px;
-    padding-right: 10px;
-    
-}
-.colortabla{
-    background-color: yellowgreen;
-}
-.overflow{
-    overflow: hidden;
-}
-.border{
-    border: 2px solid black;
-}
-li{
-    list-style: none;
-}
-
-
-
-
-.gridprod{
+@media screen and (max-width: 768px) {
+  header, .headernos {
     display: grid;
-    grid-template-areas: 
-    "header header header"
-    "main main main"
-    "footer footer footer";
-    grid-template-columns: 30% 40% 30%;
-    grid-template-rows: auto auto auto;
-    
-}
-header{grid-area:header; display: flex; justify-content: space-between;}
-main{grid-area: main;}
-footer{grid-area: footer; display:flex; justify-content: space-between;}
-
-.m20{
-    margin: 20px;
-}
-.centro{
-    text-align: center;
-}
-
-
-
-
-
-
-.gridindex{
+    grid-template-areas: "logo" "nav";
+    grid-template-columns: 100%;
+    grid-template-rows: auto; }
+    header .logo, .headernos .logo {
+      grid-area: logo; }
+    header nav, .headernos nav {
+      grid-area: nav; }
+  .imgmobile {
+    width: 400px;
+    height: 100%; }
+  .gridindex {
     display: grid;
-    grid-template-areas: 
-    "header header header"
-    "main main main"
-    "footer footer footer";
-    grid-template-columns: 30% 40% 30%;
-    grid-template-rows: auto auto auto;
-}
-header{grid-area:header; display: flex; justify-content: space-between;}
-main{grid-area: main;}
-footer{grid-area: footer; display:flex; justify-content: space-between;}
-
-
-.gridmain{
+    grid-template-areas: "header" "main" "footer";
+    grid-template-columns: 100%;
+    grid-template-columns: repeat(3, auto); }
+    .gridindex header {
+      grid-area: header;
+      justify-content: center; }
+    .gridindex main {
+      grid-area: main; }
+    .gridindex footer {
+      grid-area: footer;
+      display: flex;
+      flex-direction: column; }
+  .header {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center; }
+  .headernos {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center; }
+  .nav {
+    display: flex;
+    justify-content: center; }
+  .mainindex {
     display: grid;
-    grid-template-areas: 
-    "imgencabezado imgencabezado imgencabezado"
-    "imgprod imgprod imgprod2"
-    "titulo titulo titulo2"
-    "caract caract caract2"
-    "comprar comprar comprar2"
-    ;
-    grid-template-columns: 30% 40% 30%;
-    grid-template-rows: repeat(6, auto);
-}
-
-.imgEncabezado{grid-area: imgencabezado;}
-.imgprod{ grid-area: imgprod; display: flex; justify-content: space-evenly;}
-.img3{grid-area: imgprod2;}
-
-.titulo{grid-area: titulo; display: flex; justify-content: space-around;}
-.titulo2{grid-area: titulo2;}
-.desc{grid-area: caract; display: flex; justify-content: space-around;}
-.desc3{grid-area: caract2;}
-
-.comprar{grid-area: comprar; display: flex; justify-content: space-around;}
-.comprar3{grid-area: comprar2; margin-left: 131px; margin-right: 150px}
-
-.promo{grid-area: promo; display: flex; justify-content: space-around;}
-.promo2{grid-area: promo2;}
-
-
-.imgcenter{
-    width: 1700px;
-    height: 500px;
-}
-
-
-.gridnosotros{
+    grid-template-areas: "img" "titulo" "texto" "titulo2" "tabla";
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(5, auto); }
+    .mainindex .imgindex {
+      grid-area: img; }
+    .mainindex .titulo1 {
+      grid-area: titulo; }
+    .mainindex .texto {
+      grid-area: texto; }
+    .mainindex .titulo2 {
+      grid-area: titulo2; }
+    .mainindex .tabla {
+      grid-area: tabla; }
+  .tabla {
+    display: flex;
+    flex-direction: column; }
+  .news {
+    display: flex;
+    justify-content: center; }
+  .gridmain {
     display: grid;
-    grid-template-areas: 
-    "titulo1 titulo1"
-    "img1 text1"
-    "titulo2 titulo2"
-    "text2 img2"
-    "titulo3 titulo3"
-    "img3 text3"
-    ;
+    grid-template-areas: "img img" "producto1 producto1" "titulo titulo" "desc desc" "comprar comprar" "producto2 producto2" "titulo2 titulo2" "desc2 desc2" "comprar2 comprar2";
     grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(3, auto);
-}
-.titulonos{grid-area: titulo1; display: flex; justify-content: center;}
-.imgnos{grid-area: img1;}
-.text1{grid-area: text1;}
-.titunosotros{grid-area: titulo2; display: flex; justify-content: center;}
-.text2{grid-area: text2;}
-.imgnosotros{grid-area: img2;}
-.comotrab{grid-area: titulo3; display: flex; justify-content: center;}
-.imgtrab{grid-area: img3;}
-.text3{grid-area: text3;}
-
-/* .imgdesktop{ width="800px" height="500px"} */
-
-/* .center{display: flex; justify-content: center;}
-.form{display: flex; flex-direction: column;} */
-
-.gridcont{
-    display: grid;
-    grid-template-areas: 
-    "titulo titulo"
-    "formulario formulario";
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto auto;
-
-
-}
-.titulocontac{grid-area: titulo; display: flex; justify-content: center;}
-.form{grid-area: formulario; display: flex; justify-content: center;}
-
-
-
-.bloggrid{
-    display: grid;
-    grid-template-areas: 
-    "titulo titulo titulo"
-    "pregunta1 pregunta2 pregunta3"
-    "titulo2 titulo2 titulo2"
-    "video1 video2 video3"
-    "titulotest titulotest titulotest"
-    "textotex1 textotex2 textotex3";
-    grid-template-columns: 30% 40% 40%;
-    grid-template-rows: repeat(6,auto);
-
-
-}
-.tituloBlog{grid-area: titulo; display: flex; justify-content: center;}
-.pregunta1{grid-area: pregunta1;}
-.pregunta2{grid-area: pregunta2;}
-.pregunta3{grid-area: pregunta3;}
-.titulotut{grid-area: titulo2; display: flex; justify-content: center;}
-.video1{grid-area: video1; display: flex; justify-content: space-around;}
-.video2{grid-area: video2;  display: flex; justify-content: space-around;}
-.video3{grid-area: video3;  display: flex; justify-content: space-around;}
-.titulotest{grid-area: titulotest; display: flex; justify-content: center;}
-.textotex1{grid-area: textotex1;}
-.textotex2{grid-area: textotex2;}
-.textotex3{grid-area: textotex3;}
-
-
-
-.oferta{
-
-    background: linear-gradient(to left, red, yellow);
-    transform: translate(-712px, 895px) rotate(40deg);
-    /* border: 20px; */
-    /* margin: 218px; */
-    margin-bottom: 654px;
-    margin-left: 430px;
-
-
-}
-
-
-@media screen and (max-width:768px){
-    body{background-color: lightcoral;}
-
-    .header, .headernos{
-        display: grid;
-        grid-template-areas: 
-        "logo"
-        "nav";
-        grid-template-columns: 100%;
-        grid-template-rows: auto;
-    }
-    .logo{grid-area: logo;}
-    .nav{grid-area: nav;}
-
-    .imgmobile{
-        width: 400px; height: 100%;
-    }
-
-    .gridindex{
-        display: grid;
-        grid-template-areas: 
-        "header"
-        "main"
-        "footer"
-        ;
-        grid-template-columns: 100%;
-        grid-template-columns: repeat(3, auto);
-    }
-    header{grid-area: header;}
-    main{grid-area: main;}
-    footer{grid-area: footer; display: flex; flex-direction: column;}
-    .header{flex-wrap: wrap; display: flex; justify-content: center;}
-    .headernos{flex-wrap: wrap; display: flex; justify-content: center;}
-    .nav{ display: flex; justify-content: center;}
-     
-
-
-    .mainindex{
-        display: grid;
-        grid-template-areas: 
-        "img"
-        "titulo"
-        "texto"
-        "titulo2"
-        "tabla";
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(5, auto);
-    }
-    .imgindex{grid-area: img;}
-    .titulo1{grid-area: titulo;}
-    .texto{grid-area: texto;}
-    .titulo2{grid-area: titulo2;}
-    .tabla{grid-area: tabla;}
-
-    
-
-    .tabla{
-        display: flex;
-        flex-direction: column;
-       }
-
-       .news{ display: flex;
-    justify-content: center;}
-
-    .gridmain{
-        display: grid;
-        grid-template-areas: 
-        "img img"
-        "producto1 producto1"
-        "titulo titulo"
-        "desc desc"
-        "comprar comprar"
-        "producto2 producto2"
-        "titulo2 titulo2"
-        "desc2 desc2"
-        "comprar2 comprar2"
-        ;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: auto auto;
-
-    }
-    .imgmobile{grid-area: img;}
-    .imgprod{grid-area: producto1;}
-    .titulo{grid-area: titulo; display: flex; justify-content: space-around;}
-    .desc{grid-area: desc; display: flex; justify-content: space-around;}
-    .comprar{grid-area: comprar; display: flex; justify-content: space-around;}
-    .img3{grid-area: producto2; display: flex; justify-content: space-around;}
-    .titulo2{grid-area: titulo2; display: flex; justify-content: space-around;}
-    .desc3{grid-area: desc2;}
-    .comprar3{grid-area: comprar2; display: flex; justify-content: space-around; margin-left: 124px;}
-
-    .oferta{
-        display: none;
-
-    }
-
-
-    .mpc3503{
-        width: 150px;
-        height: 150px;
-    }
-    .mp3554{
-        width: 150px;
-        height: 150px;
-    }
-   .mp301{
+    grid-template-rows: auto auto; }
+    .gridmain .imgmobile {
+      grid-area: img; }
+    .gridmain .imgprod {
+      grid-area: producto1; }
+    .gridmain .titulo {
+      grid-area: titulo;
+      display: flex;
+      justify-content: space-around; }
+    .gridmain .desc {
+      grid-area: desc;
+      display: flex;
+      justify-content: space-around; }
+    .gridmain .comprar {
+      grid-area: comprar;
+      display: flex;
+      justify-content: space-around; }
+    .gridmain .img3 {
+      grid-area: producto2;
+      display: flex;
+      justify-content: space-around; }
+    .gridmain .titulo2 {
+      grid-area: titulo2;
+      display: flex;
+      justify-content: space-around; }
+    .gridmain .desc3 {
+      grid-area: desc2; }
+    .gridmain .comprar3 {
+      grid-area: comprar2;
+      display: flex;
+      justify-content: space-around;
+      margin-left: 124px; }
+  .oferta {
+    display: none; }
+  .mpc3503 {
     width: 150px;
-        height: 150px;
-   }
-
-
-
-   .gridnosotros{
+    height: 150px; }
+  .mp3554 {
+    width: 150px;
+    height: 150px; }
+  .mp301 {
+    width: 150px;
+    height: 150px; }
+  .gridnosotros {
     display: grid;
-    grid-template-areas: 
-    "titulo1"
-    "img1"
-    "text1"
-    "titulo2"
-    "text2"
-    "img2"
-    "titulo3"
-    "img3" 
-    "text3"
-    ;
+    grid-template-areas: "titulo1" "img1" "text1" "titulo2" "text2" "img2" "titulo3" "img3"  "text3";
     grid-template-columns: 100%;
-    grid-template-rows: repeat(6, auto);
-}
-.titulonos{grid-area: titulo1; display: flex; justify-content: center;}
-.imgnos{grid-area: img1;}
-.text1{grid-area: text1;}
-.titunosotros{grid-area: titulo2; display: flex; justify-content: center;}
-.text2{grid-area: text2;}
-.imgnosotros{grid-area: img2;}
-.comotrab{grid-area: titulo3; display: flex; justify-content: center;}
-.imgtrab{grid-area: img3;}
-.text3{grid-area: text3;}
-    
-
-
-
-.gridcont{
+    grid-template-rows: repeat(6, auto); }
+    .gridnosotros .titulonos {
+      grid-area: titulo1;
+      display: flex;
+      justify-content: center; }
+    .gridnosotros .imgnos {
+      grid-area: img1; }
+    .gridnosotros .text1 {
+      grid-area: text1; }
+    .gridnosotros .titunosotros {
+      grid-area: titulo2;
+      display: flex;
+      justify-content: center; }
+    .gridnosotros .text2 {
+      grid-area: text2; }
+    .gridnosotros .imgnosotros {
+      grid-area: img2; }
+    .gridnosotros .comotrab {
+      grid-area: titulo3;
+      display: flex;
+      justify-content: center; }
+    .gridnosotros .imgtrab {
+      grid-area: img3; }
+    .gridnosotros .text3 {
+      grid-area: text3; }
+  .gridcont {
     display: grid;
-    grid-template-areas: 
-    "titulo"
-    "formulario";
-
+    grid-template-areas: "titulo" "formulario";
     grid-template-columns: 100%;
-    grid-template-rows: auto auto;
-
-}
- .titulocontac{display: flex; justify-content: center;}
- .center{display: flex; justify-content: center;}
-.form2{display: flex; flex-direction: column;}   
-
-
-
-
-.bloggrid{
+    grid-template-rows: auto auto; }
+    .gridcont .titulocontac {
+      display: flex;
+      justify-content: center; }
+    .gridcont .center {
+      display: flex;
+      justify-content: center; }
+    .gridcont .form2 {
+      display: flex;
+      flex-direction: column; }
+  .bloggrid {
     display: grid;
-    grid-template-areas: 
-    
-    "titulo"
-    "pregunta1"
-    "pregunta2"
-    "pregunta3"
-    "tutoriales"
-    "video1"
-    "video2"
-    "video3"
-    "titulotest"
-    "testimonio1"
-    "testimonio2"
-    "testimonio3";
+    grid-template-areas: "titulo" "pregunta1" "pregunta2" "pregunta3" "tutoriales" "video1" "video2" "video3" "titulotest" "testimonio1" "testimonio2" "testimonio3";
     grid-template-columns: 100%;
-    grid-template-rows: repeat(12, auto);    
+    grid-template-rows: repeat(12, auto); }
+    .bloggrid .tituloBlog {
+      grid-area: titulo;
+      display: flex;
+      justify-content: center; }
+    .bloggrid .pregunta1 {
+      grid-area: pregunta1; }
+    .bloggrid .pregunta2 {
+      grid-area: pregunta2; }
+    .bloggrid .pregunta3 {
+      grid-area: pregunta3; }
+    .bloggrid .titulotut {
+      grid-area: tutoriales;
+      display: flex;
+      justify-content: center; }
+    .bloggrid .video1 {
+      grid-area: video1;
+      display: flex;
+      justify-content: space-around; }
+    .bloggrid .video2 {
+      grid-area: video2;
+      display: flex;
+      justify-content: space-around; }
+    .bloggrid .video3 {
+      grid-area: video3;
+      display: flex;
+      justify-content: space-around; }
+    .bloggrid .titulotest {
+      grid-area: titulotest;
+      display: flex;
+      justify-content: center; }
+    .bloggrid .textotex1 {
+      grid-area: testimonio1; }
+    .bloggrid .textotex2 {
+      grid-area: testimonio2; }
+    .bloggrid .textotex3 {
+      grid-area: testimonio3; } }
 
-}
+header nav {
+  background-color: yellowgreen;
+  padding-top: 25px;
+  padding-right: 10px; }
+  header nav ul li {
+    width: 5rem;
+    display: inline-block;
+    padding: 15px;
+    list-style: none; }
 
-.tituloBlog{grid-area: titulo; display: flex; justify-content: center;}
-.pregunta1{grid-area: pregunta1;}
-.pregunta2{grid-area: pregunta2;}
-.pregunta3{grid-area: pregunta3;}
-.titulotut{grid-area: tutoriales; display: flex; justify-content: center;}
-.video1{grid-area: video1; display: flex; justify-content: space-around;}
-.video2{grid-area: video2;  display: flex; justify-content: space-around;}
-.video3{grid-area: video3;  display: flex; justify-content: space-around;}
-.titulotest{grid-area: titulotest; display: flex; justify-content: center;}
-.textotex1{grid-area: testimonio1;}
-.textotex2{grid-area: testimonio2;}
-.textotex3{grid-area: testimonio3;}
+.m20 {
+  margin: 20px; }
 
-    }
+.centro {
+  text-align: center; }
 
+.colortabla {
+  background-color: yellowgreen; }
+
+.border {
+  border: 2px solid black; }
