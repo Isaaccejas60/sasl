@@ -58,17 +58,9 @@
   .gridmain .comprar {
     grid-area: comprar;
     display: flex;
-    justify-content: space-around;
-    background: linear-gradient(180deg, #65bce8 0%, #306485 49%, #fbde74 50%, #ff9900 100%);
-    background-size: 1px 100px;
-    transition: all .3s; }
+    justify-content: space-around; }
   .gridmain .comprar3 {
-    grid-area: comprar2;
-    margin-left: 131px;
-    margin-right: 150px;
-    background: linear-gradient(180deg, #65bce8 0%, #306485 49%, #fbde74 50%, #ff9900 100%);
-    background-size: 1px 100px;
-    transition: all .3s; }
+    grid-area: comprar2; }
   .gridmain .promo {
     grid-area: promo;
     display: flex;
@@ -366,24 +358,43 @@
     .bloggrid .textotex3 {
       grid-area: testimonio3; } }
 
-header nav {
-  background-color: yellowgreen;
+header ul li {
+  width: 5rem;
+  display: inline-block;
+  padding: 15px;
+  list-style: none; }
+
+.color-primario {
+  background-color: blue; }
+
+.color-secundario {
+  background-color: lightgrey; }
+
+.color-terciario {
+  background-color: yellowgreen; }
+
+.nav {
   padding-top: 25px;
   padding-right: 10px; }
-  header nav ul li {
-    width: 5rem;
-    display: inline-block;
-    padding: 15px;
-    list-style: none; }
+
+.btncomprar, .btncomprar2 {
+  background: linear-gradient(180deg, #65bce8 0%, #306485 49%, #fbde74 50%, #ff9900 100%);
+  background-size: 1px 100px;
+  transition: all .3s; }
+
+.btncomprar2 {
+  margin-left: 131px;
+  margin-right: 120px;
+  text-align: center; }
+
+.overflow {
+  overflow: hidden; }
 
 .m20 {
   margin: 20px; }
 
 .centro {
   text-align: center; }
-
-.colortabla {
-  background-color: yellowgreen; }
 
 .border {
   border: 2px solid black; }

@@ -1,16 +1,18 @@
 
 @import "grids";
 @import "nav";
-@import "footer";
+@import "map";
+@import "extend";
+.overflow{
+    overflow: hidden;
+}
 .m20{
     margin: 20px;
 }
 .centro{
     text-align: center;
 }
-.colortabla{
-    background-color: yellowgreen;
-}
+
 .border{
     border: 2px solid black;
 }

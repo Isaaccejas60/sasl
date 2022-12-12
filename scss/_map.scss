@@ -1,0 +1,22 @@
+$colores:(
+    primario: blue,
+    secundario: lightgrey,
+    terciario: yellowgreen
+);
+
+@each $importancia, $color in $colores{
+    .color-#{$importancia}{
+        
+        background-color: $color;
+    }
+}
+
+$tamanio:(
+         ptop: 25px,
+        pright: 10px,
+);
+.nav{
+    padding-top:  map-get($tamanio, ptop);
+    padding-right: map-get($tamanio,pright);
+   
+}
