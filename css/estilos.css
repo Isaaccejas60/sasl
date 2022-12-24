@@ -14,21 +14,6 @@
     display: flex;
     justify-content: space-between; }
 
-h1 {
-  font-size: 30px; }
-
-p {
-  font-size: 20px; }
-
-li {
-  font-size: 20px; }
-
-.titulompc3503, .titulomp3554, .titulo301 {
-  font-size: 27px; }
-
-label {
-  font-size: 20px; }
-
 .gridindex {
   display: grid;
   grid-template-areas: "header header header" "main main main" "footer footer footer";
@@ -183,6 +168,16 @@ label {
     grid-area: textotex3; }
 
 @media screen and (max-width: 768px) {
+  h1 {
+    font-size: 30px; }
+  p {
+    font-size: 20px; }
+  li {
+    font-size: 20px; }
+  .titulompc3503, .titulomp3554, .titulo301 {
+    font-size: 27px; }
+  label {
+    font-size: 20px; }
   header, .headernos {
     display: grid;
     grid-template-areas: "logo" "nav";
