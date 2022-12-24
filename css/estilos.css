@@ -14,6 +14,21 @@
     display: flex;
     justify-content: space-between; }
 
+h1 {
+  font-size: 30px; }
+
+p {
+  font-size: 20px; }
+
+li {
+  font-size: 20px; }
+
+.titulompc3503, .titulomp3554, .titulo301 {
+  font-size: 27px; }
+
+label {
+  font-size: 20px; }
+
 .gridindex {
   display: grid;
   grid-template-areas: "header header header" "main main main" "footer footer footer";
@@ -401,3 +416,7 @@ header ul li {
 
 li {
   list-style: none; }
+
+.m20 {
+  margin-top: 40px;
+  margin-left: 0px; }

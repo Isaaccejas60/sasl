@@ -12,9 +12,21 @@
 
 }
 
+h1{ font-size: 30px;}
+p{
+    font-size: 20px;
+}
 
+li{
+    font-size: 20px;
+}
+.titulompc3503{ font-size: 27px;}
 
+.titulomp3554{ @extend .titulompc3503; }
 
+.titulo301{ @extend .titulompc3503;}
+
+label{ font-size: 20px;}
 
 .gridindex{
     display: grid;
